@@ -1,6 +1,13 @@
+# Tensorflow and numpy to create the neural network
 import tensorflow as tf
 import numpy as np
+
+# Matplotlib to plot info to show our results
+import matplotlib.pyplot as plt
+
+# OS to load files and save checkpoints
 import os
+
 
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 
