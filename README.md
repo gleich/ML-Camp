@@ -10,5 +10,5 @@ Camp Name: Artifical Intelligence and Machine Learning
 
 Location: SNHU (Southern New Hampshire University)
 
-Instructor: Tyler Hanf [@tylerHanf](www.github.com/tylerHanf)
+Instructor: Tyler Hanf [@tylerHanf](https://github.com/tylerHanf)
 
