@@ -2,6 +2,10 @@ import tensorflow as tf
 import numpy as np
 import matplotlib.pyplot as plt
 from tensorflow.keras.datasets import mnist
+from random import randint
+from os import environ
+
+environ["TF_CPP_MIN_LOG_LEVEL"] = "2"
 
 tf.reset_default_graph()
 image_height = 28
@@ -36,16 +40,16 @@ class CNN:
             self.labels, dtype=tf.int32), depth=num_classes)
         self.loss = tf.losses.softmax_cross_entropy(
             onehot_labels=one_hot_labels, logits=outputs)
-        optimizer = tf.train.GradientDescentOptimizer(learning_rate=1e-3)
+        optimizer = tf.train.GradientDescentOptimizer(learning_rate=1e-4)
         self.train_operation = optimizer.minimize(
             loss=self.loss, global_step=tf.train.get_global_step())
 
 
-steps = 10000
+steps = 20000
 batch_size = 16
 
 # added
-test_img = x_test[1]
+test_img = x_test[randint(0, 20)]
 plt.imshow(test_img)
 plt.show()
 test_img = test_img.reshape(-1, 28, 28, 1)
