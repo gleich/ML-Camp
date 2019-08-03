@@ -12,3 +12,9 @@ Location: SNHU (Southern New Hampshire University)
 
 Instructor: Tyler Hanf [@tylerHanf](https://github.com/tylerHanf)
 
+Number of other campers: 7
+
+Other campers on Github: 
+* [rrgerson](https://github.com/rrgerson)
+* [StanTheDebugger](https://github.com/StanTheDebugger)
+* [TheSwiginator](https://github.com/TheSwiginator)
